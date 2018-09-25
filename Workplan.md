@@ -8,9 +8,25 @@ Usage:
 ```
 simAR1(10,400,0.8,rnorm(400))
 ```
-should print
-A vector whith 400 steps of the AR(1) process and a plot og the function.
-or some other random chitty-chatty.
+should print a vector whith 400 steps of the AR(1) process with normal distributed white noise and a plot og the function.
+
+#### CLT
+A function that calculates a vector form the first to the the n'th step of sum(Yi)/sqrt(n), to determine if there is a Central Limit Theorem.
+
+```
+y<-simAR1(10,400,0.8,rnorm(400))
+CLT(y)
+```
+should print a plot.
+
+#### LLN
+A function that calculates form the first to the the n'th step of sum(Yi)/n, to determine if there is a Law of Large Numbers.
+
+```
+y<-simAR1(10,400,0.8,rnorm(400))
+CLT(y)
+```
+shold print a plot of the mentioned vector, together with a horizontal line in mean(y).
 
 ## Responsibilities
 
