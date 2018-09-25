@@ -2,7 +2,7 @@
 #'
 #'@examples
 
-#'@param y initial value
+#'@param y0 initial value
 #'@param n numer of steps
 #'@param phi parameter of the model
 #'@param distr vector with n elements with a given distribution.

@@ -1,7 +1,9 @@
 #' CLT function
 #'
+#'@param y vector of integers
+#'
 #'@examples
-#'y<-nsteps22(0,1000,0.8,rnorm(1000))
+#'y<-simAR1(0,1000,0.8,rnorm(1000))
 #'CLT(y)
 #'@export
 CLT<-function(y){

@@ -1,8 +1,10 @@
 #' LLN function
 #'
+#'@param y vector of integers
+#'
 #'@examples
-#'y<-nsteps22(0,1000,0.8,rnorm(1000))
-#'LLn(y)
+#'y<-simAR1(0,1000,0.8,rnorm(1000))
+#'LLN(y)
 #'@export
 
 LLN<-function(y){
