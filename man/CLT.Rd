@@ -6,6 +6,9 @@
 \usage{
 CLT(y)
 }
+\arguments{
+\item{y}{vector of integers}
+}
 \description{
 CLT function
 }

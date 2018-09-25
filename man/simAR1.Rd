@@ -7,13 +7,13 @@
 simAR1(y0, n, phi, distr)
 }
 \arguments{
+\item{y0}{initial value}
+
 \item{n}{numer of steps}
 
 \item{phi}{parameter of the model}
 
 \item{distr}{vector with n elements with a given distribution.}
-
-\item{y}{initial value}
 }
 \value{
 returns the four plots described.

@@ -6,6 +6,9 @@
 \usage{
 LLN(y)
 }
+\arguments{
+\item{y}{vector of integers}
+}
 \description{
 LLN function
 }
