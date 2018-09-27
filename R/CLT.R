@@ -6,19 +6,14 @@
 #'y<-simAR1(0,1000,0.8,rnorm(1000))
 #'CLT(y)
 #'@export
-CLT<-function(y){
+CLT1<-function(y){
   v<-c()
-  for(i in 1:length(y)){
-    v[i]=(1/sqrt(i))*sum(y[1:i])
+  n <- ncol(y)
+  for(i in 1:n){
+    v[i]=(1/sqrt(n))*sum(y[,i])
   }
-  hist(v)
+  hist(v, breaks = 20)
 }
 
-CLT<-function(y){
-  v<-c()
-  for(i in 1:length(y)){
-    v[i]=(1/sqrt(i))*sum(y[1:i])
-  }
-  hist(v)
-}
+
 
