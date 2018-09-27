@@ -10,7 +10,7 @@ LLN(y)
 \item{y}{vector of integers}
 }
 \description{
-LLN function
+Calculates form the first to the the n'th step of sum(Yi)/n, to determine if there is a Law of Large Numbers.
 }
 \examples{
 y<-simAR1(0,1000,0.8,rnorm(1000))
