@@ -2,8 +2,7 @@
 % Please edit documentation in R/simAR1.R
 \name{simAR1}
 \alias{simAR1}
-\title{AR(1) simulation
-A function that simulates an AR(1) process.}
+\title{AR(1) simulation}
 \usage{
 simAR1(y0, n, phi, distr)
 }
@@ -17,7 +16,6 @@ simAR1(y0, n, phi, distr)
 \item{distr}{vector with n elements with a given distribution.}
 }
 \description{
-AR(1) simulation
 A function that simulates an AR(1) process.
 }
 \details{
