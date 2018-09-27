@@ -11,7 +11,7 @@ CLT<-function(y){
   for(i in 1:length(y)){
     v[i]=(1/sqrt(i))*sum(y[1:i])
   }
-  plot(v,type="l")
+  hist(v)
 }
 
 
