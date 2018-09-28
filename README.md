@@ -7,8 +7,8 @@ R or RStudio
 #### Installing
 Open R or RStudio. Type and run the following code:
 ```
-install.package("AR1Sim")
-library("AR1Sim")
+install.package("simAR1")
+library("simAR1")
 ```
 ### Authors
 - Katrine Holde 
