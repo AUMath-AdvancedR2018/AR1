@@ -18,12 +18,11 @@
 #'@export
 
 simAR1<-function(y0,n,phi,distr){
-  y<-c()
+  y<-c(rep(0,n))
   y[1]<-y0
   for(i in 2:n){
     y0=phi*y[i-1]+distr[i]
     y[i]<-y0
   }
-  plot(y,type="l") 
   return(y)
 }
