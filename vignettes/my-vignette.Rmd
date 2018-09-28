@@ -26,10 +26,8 @@ A quick guide on how to install the package.
 We will here show an example, that should visualize how to use the function. Here we have a AR(1) process where the white noise, $\varepsilon_n$, is a process with zero mean and variance 1 and the parameter, $\varphi$, is 0.8. Futhermore we have that $Y_0=0$. 
 
 ```{r echo=FALSE}
-read_chunk('examples.R')
 ```
 
 ```{r}
-<<simulation>>
 ```
 

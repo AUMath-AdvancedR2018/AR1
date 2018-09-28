@@ -15,11 +15,14 @@ simAR1(y0, n, phi, distr)
 
 \item{distr}{vector with n elements with a given distribution.}
 }
-\value{
-returns the four plots described.
+\description{
+A function that simulates an AR(1) process.
+}
+\details{
+The AR(1) process is a Markov chain, in which the parts (in lack of a better word) is defined recursively;\deqn{
+Y_n+1=phi*Y_n+e_n+1}
+}
+\examples{
 y<-simAR1(0,1000,0.8,rnorm(1000))
 x<-simAR1(10,300,0,rt(300,5))
-}
-\description{
-AR(1) simulation
 }

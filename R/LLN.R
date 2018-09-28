@@ -1,4 +1,6 @@
 #' LLN function
+#' 
+#' Calculates form the first to the the n'th step of sum(Yi)/n, to determine if there is a Law of Large Numbers.
 #'
 #'@param y vector of integers
 #'
