@@ -10,17 +10,14 @@ LLN(y)
 \item{y}{vector of random variables.}
 }
 \value{
-A plot through the values \degn{sum_{i=1}^{k}y_j/k} for each k from 1 to n, in addition to a line through the mean of y.
+A plot through the values \eqn{sum_{i=1}^{k}y_j/k} for each k from 1 to n, in addition to a line through the mean of y.
 }
 \description{
-<<<<<<< HEAD
 A function that checks, if there is a Law of Large Numbers
+Calculates form the first to the the n'th step of sum(Yi)/n, to determine if there is a Law of Large Numbers.
 }
 \details{
 If a given output of this function resembles that it converges towards the line through the mean of y, it would seem that there is a Law of Large Numbers.
-=======
-Calculates form the first to the the n'th step of sum(Yi)/n, to determine if there is a Law of Large Numbers.
->>>>>>> 2bb56baf4e9f42a8eb005b828bdd9d35a096924c
 }
 \examples{
 y<-simAR1(0,1000,0.8,rnorm(1000))

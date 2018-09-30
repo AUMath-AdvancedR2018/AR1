@@ -4,11 +4,20 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
-## ----echo=FALSE----------------------------------------------------------
+## ------------------------------------------------------------------------
+library("AR1")
+
+## ---- echo=FALSE, fig.width=3, fig.height=3, fig.show='hold'-------------
+y <- simAR1(0, 300, 0.8, rnorm(300))
+plot(y, type = "l", main = "Normal distribution")
+x <- simAR1(0, 300, 0, rt(300, 1.5))
+plot(x, type = "l", main = "t distribution")
+
+## ---- echo=FALSE, fig.width=3, fig.height=3, fig.align='center'----------
+z <- simAR1(0, 1000, 0.8, rnorm(1000))
+LLN(z)
 
 ## ------------------------------------------------------------------------
+w <- replicate(50000, simAR1(0, 1000, 0.8, rnorm(1000)))
+CLT(w)
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 719c6a1065ac5435632b75bed09778ab3f00515a

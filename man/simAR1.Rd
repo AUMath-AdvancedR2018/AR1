@@ -15,14 +15,16 @@ simAR1(y0, n, phi, distr)
 
 \item{distr}{vector with n elements with a given distribution.}
 }
-<<<<<<< HEAD
 \value{
 Returns a vector of length n, that is a simulation for an AR(1) process with the given parameters.
 }
 \description{
-A function that simulates an AR(1) process.
+AR(1) simulation
 }
 \details{
+The AR(1) process is a Markov chain, in which the parts (in lack of a better word) is defined recursively;\deqn{
+Y_n+1=phi*Y_n+e_n+1}
+
 The AR(1) process is a Markov chain, in which the parts (in lack of a better word) is defined recursively;\deqn{
 Y_n+1=phi*Y_n+e_n+1}
 }
@@ -30,16 +32,3 @@ Y_n+1=phi*Y_n+e_n+1}
 y<-simAR1(0,1000,0.8,rnorm(1000))
 x<-simAR1(10,300,0,rt(300,5))
 }
-=======
-\description{
-A function that simulates an AR(1) process.
-}
-\details{
-The AR(1) process is a Markov chain, in which the parts (in lack of a better word) is defined recursively;\deqn{
-Y_n+1=phi*Y_n+e_n+1}
-}
-\examples{
-y<-simAR1(0,1000,0.8,rnorm(1000))
-x<-simAR1(10,300,0,rt(300,5))
-}
->>>>>>> 2bb56baf4e9f42a8eb005b828bdd9d35a096924c
