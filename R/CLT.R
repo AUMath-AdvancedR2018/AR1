@@ -4,9 +4,9 @@
 #'
 #'@param y a matrix where every column is a vector of random variables with the same parametervalues.
 #'
-#'@return Returns a histrogram with the CLT value \degn{(sum_{i=1}^n Y_i)\sqrt(n)} for each column.
+#'@return Returns a histrogram with the CLT value \eqn{(sum_{i=1}^n Y_i)\sqrt(n)} for each column.
 #'
-#'@details If there is a is a Central Limit Theorem \degn{(sum_{i=1}^n Y_i)\sqrt(n)} would converge towards i normal distribution. 
+#'@details If there is a is a Central Limit Theorem \eqn{(sum_{i=1}^n Y_i)\sqrt(n)} would converge towards i normal distribution. 
 #'If the histogram produced by this function resembles a normal distribution, it would seem, that there is a Cental Limit Theorem.
 #'
 #'@examples
