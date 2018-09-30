@@ -1,10 +1,7 @@
 #' LLN function
 #' 
-<<<<<<< HEAD
 #' A function that checks, if there is a Law of Large Numbers
-=======
 #' Calculates form the first to the the n'th step of sum(Yi)/n, to determine if there is a Law of Large Numbers.
->>>>>>> 2bb56baf4e9f42a8eb005b828bdd9d35a096924c
 #'
 #'@param y vector of random variables.
 #'
