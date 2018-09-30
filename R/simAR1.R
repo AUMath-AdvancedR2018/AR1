@@ -1,15 +1,18 @@
 #' AR(1) simulation
+#' 
+#' A function that simulates an AR(1) process.
 #'
-#'@examples
-
 #'@param y0 initial value
 #'@param n numer of steps
 #'@param phi parameter of the model
 #'@param distr vector with n elements with a given distribution.
 #'
+#'@return Returns a vector of length n, that is a simulation for an AR(1) process with the given parameters.
 #'
-#' @return returns the four plots described.
-
+#'@details The AR(1) process is a Markov chain, in which the parts (in lack of a better word) is defined recursively;\deqn{
+#'Y_n+1=phi*Y_n+e_n+1}
+#'
+#'@examples
 #'y<-simAR1(0,1000,0.8,rnorm(1000))
 #'x<-simAR1(10,300,0,rt(300,5))
 #'@export
