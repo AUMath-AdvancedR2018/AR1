@@ -24,9 +24,7 @@ AR(1) simulation
 \details{
 The AR(1) process is a Markov chain, in which the parts (in lack of a better word) is defined recursively;\deqn{
 Y_n+1=phi*Y_n+e_n+1}
-
-The AR(1) process is a Markov chain, in which the parts (in lack of a better word) is defined recursively;\deqn{
-Y_n+1=phi*Y_n+e_n+1}
+the e_n's are i.i.d.
 }
 \examples{
 y<-simAR1(0,1000,0.8,rnorm(1000))
