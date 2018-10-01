@@ -16,8 +16,9 @@
 CLT<-function(y){
   v<-c()
   n <- ncol(y)
+  m <- nrow(y)
   for(i in 1:n){
-    v[i]=(1/sqrt(n))*sum(y[,i])
+    v[i]=(1/sqrt(m))*sum(y[,i])
   }
   hist(v, breaks = 20)
 }
