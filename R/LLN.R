@@ -14,11 +14,6 @@
 #'LLN(x)
 #'@export
 
-LLN1<-function(y){
-  v <- cumsum(y)/(1:length(y))
-  v
-}
-
 LLN <- function(x){
   n <- ncol(x)
   c <- matrix(c(rep(0,length(x))), nrow=nrow(x), ncol=n)
@@ -28,3 +23,8 @@ LLN <- function(x){
   c
   matplot(c, type = "l")
 }
+LLN1<-function(y){
+  v <- cumsum(y)/(1:length(y))
+  v
+}
+
