@@ -12,16 +12,18 @@
 #'Y_n+1=phi*Y_n+e_n+1}
 #'the e_n's are i.i.d.
 #'@examples
-#'y<-simAR1(0,1000,0.8,rnorm(1000))
-#'x<-simAR1(10,300,0,rt(300,5))
+#'y<-simAR1(0, 1000, 0.8, rnorm, 1000)
+#'x<-simAR1(10, 300, 0, rt, 300, 1.5)
 #'@export
 
-simAR1<-function(y0,n,phi,distr){
+simAR1<-function(y0,n,phi,distfun = rnorm, ...){
+  d <- distfun(...)
   y<-c(rep(0,n))
   y[1]<-y0
   for(i in 2:n){
-    y0=phi*y[i-1]+distr[i]
+    y0=phi*y[i-1]+d[i]
     y[i]<-y0
   }
   return(y)
 }
+
