@@ -10,7 +10,7 @@
 #'If the histogram produced by this function resembles a normal distribution, it would seem, that there is a Cental Limit Theorem.
 #'
 #'@examples
-#'y<-replicate(50000, simAR1(0,1000,0.8,rnorm(1000))
+#'y<-replicate(50000, simAR1(0,1000,0.8,rnorm,1000))
 #'CLT(y)
 #'@export
 CLT<-function(y){

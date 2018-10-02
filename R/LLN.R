@@ -10,9 +10,14 @@
 #'@details If a given output of this function resembles that it converges towards the same value, it would seem that there is a Law of Large Numbers.
 #'
 #'@examples
-#'x<-replicate(10, simAR1(0,1000,0.8,rnorm(1000)))
+#'x<-replicate(10, simAR1(0,1000,0.8,rnorm,1000)
 #'LLN(x)
 #'@export
+
+LLN1<-function(y){
+  v <- cumsum(y)/(1:length(y))
+  v
+}
 
 LLN <- function(x){
   n <- ncol(x)
@@ -23,8 +28,3 @@ LLN <- function(x){
   c
   matplot(c, type = "l")
 }
-LLN1<-function(y){
-  v <- cumsum(y)/(1:length(y))
-  v
-}
-
