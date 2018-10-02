@@ -28,6 +28,3 @@ LLN <- function(x){
   c
   matplot(c, type = "l")
 }
-
-x <- replicate(10, simAR1(0, 5000, 0.8, rnorm(5000)))
-LLN(x)
