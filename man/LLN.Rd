@@ -4,22 +4,22 @@
 \alias{LLN}
 \title{LLN function}
 \usage{
-LLN(y)
+LLN(x)
 }
 \arguments{
-\item{y}{vector of random variables.}
+\item{x}{a matrix where every column is a vector of random variables with the same parametervalues.}
 }
 \value{
-A plot through the values \eqn{sum_{i=1}^{k}y_j/k} for each k from 1 to n, in addition to a line through the mean of y.
+A plot through the values \eqn{sum_{i=1}^{k}y_j/k} for each k from 1 to n.
 }
 \description{
 A function that checks, if there is a Law of Large Numbers
 Calculates form the first to the the n'th step of sum(Yi)/n, to determine if there is a Law of Large Numbers.
 }
 \details{
-If a given output of this function resembles that it converges towards the line through the mean of y, it would seem that there is a Law of Large Numbers.
+If a given output of this function resembles that it converges towards the same value, it would seem that there is a Law of Large Numbers.
 }
 \examples{
-y<-simAR1(0,1000,0.8,rnorm(1000))
-LLN(y)
+x<-replicate(10, simAR1(0,1000,0.8,rnorm(1000)))
+LLN(x)
 }

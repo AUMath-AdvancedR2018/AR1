@@ -14,11 +14,6 @@
 #'LLN(x)
 #'@export
 
-LLN1<-function(y){
-  v <- cumsum(y)/(1:length(y))
-  v
-}
-
 LLN <- function(x){
   n <- ncol(x)
   c <- matrix(c(rep(0,length(x))), nrow=nrow(x), ncol=n)
@@ -28,6 +23,8 @@ LLN <- function(x){
   c
   matplot(c, type = "l")
 }
+LLN1<-function(y){
+  v <- cumsum(y)/(1:length(y))
+  v
+}
 
-x <- replicate(10, simAR1(0, 5000, 0.8, rnorm(5000)))
-LLN(x)
