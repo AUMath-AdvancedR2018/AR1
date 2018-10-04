@@ -13,7 +13,9 @@ simAR1(y0, n, phi, distfun = rnorm, ...)
 
 \item{phi}{parameter of the model}
 
-\item{distr}{vector with n elements with a given distribution.}
+\item{distfun}{a distribution function}
+
+\item{...}{parameters to the function disfun}
 }
 \value{
 Returns a vector of length n, that is a simulation for an AR(1) process with the given parameters.
