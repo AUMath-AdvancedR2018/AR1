@@ -4,7 +4,7 @@
 \alias{simAR1}
 \title{AR(1) simulation}
 \usage{
-simAR1(y0, n, phi, distr)
+simAR1(y0, n, phi, distfun = rnorm, ...)
 }
 \arguments{
 \item{y0}{initial value}
@@ -27,6 +27,6 @@ Y_n+1=phi*Y_n+e_n+1}
 the e_n's are i.i.d.
 }
 \examples{
-y<-simAR1(0,1000,0.8,rnorm(1000))
-x<-simAR1(10,300,0,rt(300,5))
+y<-simAR1(0, 1000, 0.8, rnorm, 1000)
+x<-simAR1(10, 300, 0, rt, 300, 1.5)
 }

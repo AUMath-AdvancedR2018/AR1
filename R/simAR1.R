@@ -4,7 +4,8 @@
 #'@param y0 initial value
 #'@param n numer of steps
 #'@param phi parameter of the model
-#'@param distr vector with n elements with a given distribution.
+#'@param distfun a distribution function
+#'@param ... parameters to the function disfun
 #'
 #'@return Returns a vector of length n, that is a simulation for an AR(1) process with the given parameters.
 #'
