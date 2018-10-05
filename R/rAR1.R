@@ -14,16 +14,16 @@
 #'summary(l)
 #'plot(l)
 #'@export
-rAR1<-function(n, y0=0, m=300, phi=0.5, distfun=rnorm, ...){
+rAR1 <- function(n, y0=0, m=300, phi=0.5, distfun=rnorm, ...){
   require("purrr")
-  p<-rerun(n,simAR1(y0, m, phi, distfun,...))
+  p <- rerun(n,simAR1(y0, m, phi, distfun,...))
   result <- matrix(unlist(p), ncol = n, byrow = F)
-  attr(result,"type")<-"AR(1)"
-  attr(result,"realisations")<-n
-  attr(result,"initial_value")<-y0
-  attr(result, "steps")<-m
-  attr(result,"phi")<-phi
-  attr(result,"distr_white_noise")<-distfun
-  class(result)<-c("simulation","matrix")
+  attr(result,"type") <- "AR(1)"
+  attr(result,"realisations") <- n
+  attr(result,"initial_value") <- y0
+  attr(result, "steps") <- m
+  attr(result,"phi") <- phi
+  attr(result,"distr_white_noise") <- distfun
+  class(result) <- c("simulation","matrix")
   result
 }
