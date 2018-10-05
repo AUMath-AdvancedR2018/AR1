@@ -25,4 +25,5 @@ for(i in 2:n){
   y0=phi*y[i-1]+d[i]
   y[i]<-y0
   }
+return(y)
 }
