@@ -4,7 +4,7 @@ Title: Tools for working with AR(1) processes.
 Version: 0.1.0
 Author: Katrine Holde, Ida Egendal
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: The package lets ypu simulate the AR(1) process, and check if your process follows some of the important rules of probabilityt theory.
+Description: The package lets ypu simulate the AR(1) process, and check if your process follows some of the important rules of probability theory.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
