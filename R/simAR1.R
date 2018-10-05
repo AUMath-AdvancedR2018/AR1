@@ -18,13 +18,11 @@
 #'@export
 
 simAR1<-function(y0,n,phi,distfun = rnorm, ...){
-  d <- distfun(...)
-  y<-c(rep(0,n))
-  y[1]<-y0
-  for(i in 2:n){
-    y0=phi*y[i-1]+d[i]
-    y[i]<-y0
+d <- distfun(...)
+y<-c(rep(0,n))
+y[1]<-y0
+for(i in 2:n){
+  y0=phi*y[i-1]+d[i]
+  y[i]<-y0
   }
-  return(y)
 }
-
