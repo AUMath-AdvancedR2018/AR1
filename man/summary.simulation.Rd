@@ -10,8 +10,8 @@
 \item{p}{a matrix of class "simulation".}
 }
 \value{
-It returns a summary. The summary contains the length of the individual simulation, the value of the
-parameter phi, the value of the initial value Y_0, and (...).
+It returns a summary. The summary contains the number and the length of the simulations and what kind of 
+simulation it is. It also contains the value of the parameter phi and the initial value Y_0.
 }
 \description{
 Gives an summary of a simulation.

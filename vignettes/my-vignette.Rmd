@@ -1,10 +1,10 @@
 ---
-title: "Simulation of the AR(1) process"
+title: "Simulation_of_the_AR(1)_process"
 author: "Katrine Holde"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Simulation of the AR(1) process}
+  %\VignetteIndexEntry{Simulation_of_the_AR(1)_process}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
