@@ -10,7 +10,7 @@
 #'@details If a given output of this function resembles that it converges towards the same value, it would seem that there is a Law of Large Numbers.
 #'
 #'@examples
-#'x<-replicate(10, simAR1(0,1000,0.8,rnorm,1000)
+#'x<-replicate(10, simAR1(0,1000,0.8,rnorm,1000))
 #'LLN(x)
 #'@export
 
